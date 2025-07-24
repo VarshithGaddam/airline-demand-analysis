@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Body and typography */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f7f7f9;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  background: #fff;
+  max-width: 900px;
+  margin: 32px auto 0 auto;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 36px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #fc6600;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: #1866b2;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+input[type="text"] {
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin-right: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input[type="text"]:focus {
+  border: 1.5px solid #fc6600;
+}
+
+button {
+  background: #1866b2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #fc6600;
+}
+
+/* Table Styling with Borders */
+.table-container {
+  overflow-x: auto;
+}
+
+.table-card {
+  background: #fafafd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 16px;
+  margin: 16px 0 32px 0;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 1rem;
+  border: 1px solid #ddd;  /* Outer table border */
+}
+
+.data-table th, .data-table td {
+  padding: 9px 14px;
+  text-align: left;
+  border: 1px solid #ddd;  /* Borders on each cell (rows and columns) */
+}
+
+.data-table thead th {
+  background: #1866b2;
+  color: #fff;
+  font-weight: 700;
+}
+
+.data-table tbody tr {
+  transition: background 0.2s;
+}
+
+.data-table tbody tr:hover {
+  background: #f7f7f9;
+}
+
+/* Error Message */
+.error-message {
+  color: #b10022;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Insights Section Styling */
+.insights-pre {
+  white-space: pre-wrap;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff9f1;
+  border: 1.5px solid #fc6600;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 32px 0 0 0;
+  box-shadow: 0 1px 6px rgba(252, 102, 0, 0.07);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 16px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  .data-table th, .data-table td {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+  .insights-pre {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
